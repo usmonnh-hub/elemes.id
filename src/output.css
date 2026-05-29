@@ -12,6 +12,8 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --font-weight-bold: 700;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
@@ -251,8 +253,23 @@
   .mt-\[50px\] {
     margin-top: 50px;
   }
+  .mt-\[100px\] {
+    margin-top: 100px;
+  }
+  .ml-0 {
+    margin-left: calc(var(--spacing) * 0);
+  }
+  .ml-\[-10px\] {
+    margin-left: -10px;
+  }
+  .ml-\[-12px\] {
+    margin-left: -12px;
+  }
   .ml-\[25px\] {
     margin-left: 25px;
+  }
+  .ml-\[200px\] {
+    margin-left: 200px;
   }
   .block {
     display: block;
@@ -281,6 +298,9 @@
   .w-\[20\] {
     width: 20;
   }
+  .w-\[20px\] {
+    width: 20px;
+  }
   .w-\[25\%\] {
     width: 25%;
   }
@@ -296,6 +316,12 @@
   .w-\[40\%\] {
     width: 40%;
   }
+  .w-\[50\%\] {
+    width: 50%;
+  }
+  .w-\[50px\] {
+    width: 50px;
+  }
   .w-\[60\%\] {
     width: 60%;
   }
@@ -308,8 +334,26 @@
   .w-\[100\%\] {
     width: 100%;
   }
+  .w-\[100p\] {
+    width: 100p;
+  }
+  .w-\[100px\] {
+    width: 100px;
+  }
+  .w-\[150px\] {
+    width: 150px;
+  }
   .w-\[200px\] {
     width: 200px;
+  }
+  .w-\[210px\] {
+    width: 210px;
+  }
+  .w-\[220px\] {
+    width: 220px;
+  }
+  .w-\[240px\] {
+    width: 240px;
   }
   .w-\[250px\] {
     width: 250px;
@@ -323,6 +367,12 @@
   .w-\[400px\] {
     width: 400px;
   }
+  .w-\[410px\] {
+    width: 410px;
+  }
+  .w-\[500px\] {
+    width: 500px;
+  }
   .w-\[600px\] {
     width: 600px;
   }
@@ -332,8 +382,23 @@
   .w-\[800px\] {
     width: 800px;
   }
+  .w-\[4020px\] {
+    width: 4020px;
+  }
+  .w-\[5002px\] {
+    width: 5002px;
+  }
+  .w-fit {
+    width: fit-content;
+  }
   .w-full {
     width: 100%;
+  }
+  .max-w-\[1400px\] {
+    max-width: 1400px;
+  }
+  .max-w-\[1500px\] {
+    max-width: 1500px;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -347,8 +412,14 @@
   .resize {
     resize: both;
   }
+  .scrollbar-auto {
+    scrollbar-width: auto;
+  }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -368,8 +439,26 @@
   .gap-\[20px\] {
     gap: 20px;
   }
+  .gap-\[30px\] {
+    gap: 30px;
+  }
   .gap-\[50px\] {
     gap: 50px;
+  }
+  .overflow-auto {
+    overflow: auto;
+  }
+  .overflow-clip {
+    overflow: clip;
+  }
+  .overflow-scroll {
+    overflow: scroll;
+  }
+  .overflow-visible {
+    overflow: visible;
+  }
+  .overflow-x-scroll {
+    overflow-x: scroll;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -507,8 +596,23 @@
   .bg-\[\#62626200\] {
     background-color: #62626200;
   }
+  .bg-\[\#E6F3F5\] {
+    background-color: #E6F3F5;
+  }
   .bg-\[\#E7462D\] {
     background-color: #E7462D;
+  }
+  .bg-\[\#EAEEFA\] {
+    background-color: #EAEEFA;
+  }
+  .bg-\[\#F0FEEB\] {
+    background-color: #F0FEEB;
+  }
+  .bg-\[\#F3F7D9\] {
+    background-color: #F3F7D9;
+  }
+  .bg-\[\#F9EEF3\] {
+    background-color: #F9EEF3;
   }
   .bg-\[\#ff00001f\] {
     background-color: #ff00001f;
@@ -606,6 +710,9 @@
       background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
     }
   }
+  .bg-transparent {
+    background-color: transparent;
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -675,8 +782,18 @@
   .py-\[30px\] {
     padding-block: 30px;
   }
+  .pb-\[30px\] {
+    padding-bottom: 30px;
+  }
+  .text-center {
+    text-align: center;
+  }
   .font-sans {
     font-family: var(--font-sans);
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
   .text-\[10px\] {
     font-size: 10px;
@@ -696,6 +813,9 @@
   .text-\[20px\] {
     font-size: 20px;
   }
+  .text-\[30px\] {
+    font-size: 30px;
+  }
   .text-\[35px\] {
     font-size: 35px;
   }
@@ -707,6 +827,12 @@
   }
   .text-\[50px\] {
     font-size: 50px;
+  }
+  .text-\[60px\] {
+    font-size: 60px;
+  }
+  .text-\[70px\] {
+    font-size: 70px;
   }
   .font-\[00\] {
     --tw-font-weight: 00;
@@ -770,8 +896,14 @@
   .text-\[\#fff\] {
     color: #fff;
   }
+  .text-\[4\] {
+    color: 4;
+  }
   .text-\[px\] {
     color: px;
+  }
+  .text-transparent {
+    color: transparent;
   }
   .underline {
     text-decoration-line: underline;
@@ -1083,6 +1215,11 @@
       margin-top: 50px;
     }
   }
+  .lg\:mt-\[200px\] {
+    @media (width >= 64rem) {
+      margin-top: 200px;
+    }
+  }
   .lg\:block {
     @media (width >= 64rem) {
       display: block;
@@ -1158,6 +1295,16 @@
       width: 100;
     }
   }
+  .lg\:w-\[300px\] {
+    @media (width >= 64rem) {
+      width: 300px;
+    }
+  }
+  .lg\:w-\[320px\] {
+    @media (width >= 64rem) {
+      width: 320px;
+    }
+  }
   .lg\:w-\[800px\] {
     @media (width >= 64rem) {
       width: 800px;
@@ -1166,6 +1313,16 @@
   .lg\:max-w-\[1200px\] {
     @media (width >= 64rem) {
       max-width: 1200px;
+    }
+  }
+  .lg\:max-w-\[1210px\] {
+    @media (width >= 64rem) {
+      max-width: 1210px;
+    }
+  }
+  .lg\:max-w-\[1500px\] {
+    @media (width >= 64rem) {
+      max-width: 1500px;
     }
   }
   .lg\:flex-row {
@@ -1181,6 +1338,16 @@
   .lg\:gap-\[30px\] {
     @media (width >= 64rem) {
       gap: 30px;
+    }
+  }
+  .lg\:gap-\[40px\] {
+    @media (width >= 64rem) {
+      gap: 40px;
+    }
+  }
+  .lg\:gap-\[50px\] {
+    @media (width >= 64rem) {
+      gap: 50px;
     }
   }
   .lg\:p-\[20px\] {
@@ -1230,6 +1397,11 @@
     @media (width >= 64rem) {
       --tw-font-weight: 700;
       font-weight: 700;
+    }
+  }
+  .\[\&\:\:-webkit-scrollbar\]\:hidden {
+    &::-webkit-scrollbar {
+      display: none;
     }
   }
 }
