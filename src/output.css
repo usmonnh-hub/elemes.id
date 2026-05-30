@@ -492,6 +492,15 @@
   .font-sans {
     font-family: var(--font-sans);
   }
+  .text-\[1px\] {
+    font-size: 1px;
+  }
+  .text-\[2px\] {
+    font-size: 2px;
+  }
+  .text-\[4px\] {
+    font-size: 4px;
+  }
   .text-\[12px\] {
     font-size: 12px;
   }
@@ -509,6 +518,12 @@
   }
   .text-\[20px\] {
     font-size: 20px;
+  }
+  .text-\[23px\] {
+    font-size: 23px;
+  }
+  .text-\[24px\] {
+    font-size: 24px;
   }
   .text-\[25px\] {
     font-size: 25px;
